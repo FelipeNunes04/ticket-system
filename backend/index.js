@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5001;
 const corsOptions = {
   origin: [
     'http://localhost:3000',
-    'https://ticket-system-frontend.onrender.com'
+    'https://ticket-system-umber.vercel.app'
   ],
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true,
