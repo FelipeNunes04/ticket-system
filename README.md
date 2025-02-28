@@ -15,7 +15,6 @@ A full-stack ticket management system with skill-based assignment built with Rea
 
 - `frontend/`: React application for the client interface
 - `backend/`: Node.js Express server with REST API
-- `scripts/`: Utility scripts (if needed)
 
 ## Getting Started
 
