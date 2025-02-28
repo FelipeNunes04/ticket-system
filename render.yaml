@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: ticket-system-backend
+    runtime: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm run start-prod
+    envVars:
+      - key: PORT
+        value: 8080
+
+  - type: web
+    name: ticket-system-frontend
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/build
+    envVars:
+      - key: REACT_APP_API_URL
+        value: https://ticket-system-backend.onrender.com/api 
